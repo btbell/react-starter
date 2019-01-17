@@ -1,4 +1,4 @@
-NOTE: From tutorial published in 2018
+NOTE: From tutorial published in 2018. It has some basic 'hello world' examples, but it also has the SkiDayCounter component.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
