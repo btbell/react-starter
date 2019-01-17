@@ -1,13 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-let skiData = {
-	total: 50,
-	powder: 20,
-	backcountry: 10,
-	goal: 100
-}
-
 class Message extends React.Component {
 	render() {
 		console.log(this.props)
