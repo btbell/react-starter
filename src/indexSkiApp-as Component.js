@@ -15,21 +15,21 @@ const calcGoalProgress = (total, goal) => {
 	return getPercent(total/goal)
 }
 
-const SkiDayCounter = ({total, powder, backcountry, goal}) => {
+const SkiDayCounter = (props) => {
 	return (
 		<section>
 			<h3>Ski Days</h3>
 			<div>
-				<p>Total Days: {total}</p>
+				<p>Total Days: {props.total}</p>
 			</div>
 			<div>
-				<p>Powder Days: {powder}</p>
+				<p>Powder Days: {props.powder}</p>
 			</div>
 			<div>
-				<p>Backcountry Days: {backcountry}</p>
+				<p>Backcountry Days: {props.backcountry}</p>
 			</div>
 			<div>
-				<p>Goal Progress: {calcGoalProgress(total, goal)}</p>
+				<p>Goal Progress: {props.goal}</p>
 			</div>
 		</section>
 	)
