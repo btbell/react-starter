@@ -19,13 +19,17 @@ const Book = ({title, author, pages}) => {
 }
 
 class Library extends React.Component {
-
-	state = { open: false }
-
-	toggleOpenClosed = () => {
-		this.setState(prevState => ({
-			open: !prevState.open
-		}))
+		constructor(props) {
+		super(props)
+		this.state = {
+			open:true
+		}
+		this.toggleOpenClosed = this.toggleOpenClosed.bind(this)
+	}
+	toggleOpenClosed() {
+		this.setState({
+			open: !this.state.open
+		})
 	}
 	render() {
 	{/* console.log is a way to check the state- uncomment console to view
